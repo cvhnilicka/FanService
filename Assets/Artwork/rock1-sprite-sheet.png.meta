@@ -1,16 +1,19 @@
 fileFormatVersion: 2
-guid: 3484a8548a79f4d9d94ca57c2f2930b3
+guid: aaf8713fc9d554f9f9eed60a636a1f1f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1901406208099655855
-    second: slide-sprite-sheet_0
+      213: 267898097182981144
+    second: rock1-sprite-sheet_0
   - first:
-      213: -5146044589811694629
-    second: slide-sprite-sheet_1
+      213: 6247558295204454986
+    second: rock1-sprite-sheet_1
   - first:
-      213: 5091696319321428297
-    second: slide-sprite-sheet_2
+      213: -698296062981411866
+    second: rock1-sprite-sheet_2
+  - first:
+      213: 7541724444920696145
+    second: rock1-sprite-sheet_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -54,7 +57,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 72
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -132,64 +135,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: slide-sprite-sheet_0
+      name: rock1-sprite-sheet_0
       rect:
         serializedVersion: 2
-        x: 221
-        y: 573
-        width: 157
-        height: 265
-      alignment: 9
-      pivot: {x: 0.4999998, y: 0.8748254}
+        x: 10
+        y: 382
+        width: 227
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 15f5f78b029dc95e0800000000000000
-      internalID: -1901406208099655855
+      spriteID: 81c389666e3c7b300800000000000000
+      internalID: 267898097182981144
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: slide-sprite-sheet_1
+      name: rock1-sprite-sheet_1
       rect:
         serializedVersion: 2
-        x: 851
-        y: 583
-        width: 195
-        height: 225
-      alignment: 9
-      pivot: {x: 0.49999937, y: 1.10822}
+        x: 264
+        y: 381
+        width: 223
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd304f1e5b39598b0800000000000000
-      internalID: -5146044589811694629
+      spriteID: a42e4332b29c3b650800000000000000
+      internalID: 6247558295204454986
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: slide-sprite-sheet_2
+      name: rock1-sprite-sheet_2
       rect:
         serializedVersion: 2
-        x: 1427
-        y: 594
-        width: 290
-        height: 131
-      alignment: 9
-      pivot: {x: 0.47722548, y: 1.2771746}
+        x: 14
+        y: 236
+        width: 227
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 941515153d659a640800000000000000
-      internalID: 5091696319321428297
+      spriteID: 6eb60f13e672f46f0800000000000000
+      internalID: -698296062981411866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rock1-sprite-sheet_3
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 239
+        width: 223
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15dc065cc6699a860800000000000000
+      internalID: 7541724444920696145
       vertices: []
       indices: 
       edges: []

@@ -15,8 +15,8 @@ public class RunnerController : MonoBehaviour
     private Vector2 jumpColliderOffset = new Vector2(0, 1.25f);
     private Vector2 jumpColliderSize = new Vector2(1.1f, 1.64f);
 
-    private Vector2 regColliderOffset = new Vector2(0, 0.235f);
-    private Vector2 regColliderSize = new Vector2(1.1f, 3.59f);
+    private Vector2 regColliderOffset = new Vector2(0, 0.1213031f);
+    private Vector2 regColliderSize = new Vector2(1.1f, 3.807394f);
 
 
 
@@ -32,6 +32,8 @@ public class RunnerController : MonoBehaviour
     private float jumpTimer;
     float movementFactor;
 
+    public Vector2 jumpVel = new Vector2(0f, 600f);
+
 
 
 
@@ -43,6 +45,7 @@ public class RunnerController : MonoBehaviour
 
         myCollider = GetComponent<CapsuleCollider2D>();
         animator = GetComponent<Animator>();
+        myBody = GetComponent<Rigidbody2D>();
         isSliding = false;
         isJumping = false;
         jumpTimer = -99f;
@@ -56,7 +59,7 @@ public class RunnerController : MonoBehaviour
         Jump();
         if (isJumping)
         {
-            Oscalate();
+            //Oscalate();
             JumpTimer();
 
         }
@@ -92,7 +95,7 @@ public class RunnerController : MonoBehaviour
             myCollider.offset = jumpColliderOffset;
             isJumping = true;
             jumpTimer = jumpTime;
-            //myBody.
+            myBody.AddRelativeForce(jumpVel);
             animator.SetBool("IsJumping", isJumping);
         }
     }
@@ -102,8 +105,10 @@ public class RunnerController : MonoBehaviour
         if (jumpTimer <= 0f && isJumping)
         {
             isJumping = false;
-            transform.localPosition = startingPos;
+            //transform.localPosition = startingPos;
             animator.SetBool("IsJumping", isJumping);
+            myCollider.size = regColliderSize;
+            myCollider.offset = regColliderOffset;
 
         }
         else if (jumpTimer > 0f && isJumping)
