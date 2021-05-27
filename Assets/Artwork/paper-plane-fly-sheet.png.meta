@@ -1,7 +1,43 @@
 fileFormatVersion: 2
 guid: 6168839c7e0fc4824b7a0d07d365c72b
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -5951257819174893851
+    second: paper-plane-fly-sheet_0
+  - first:
+      213: 2409689512260563148
+    second: paper-plane-fly-sheet_1
+  - first:
+      213: -7245376550426001269
+    second: paper-plane-fly-sheet_2
+  - first:
+      213: -1422713864513803284
+    second: paper-plane-fly-sheet_3
+  - first:
+      213: -3906566529957013200
+    second: paper-plane-fly-sheet_4
+  - first:
+      213: 1380111639059498356
+    second: paper-plane-fly-sheet_5
+  - first:
+      213: 1893373466092067354
+    second: paper-plane-fly-sheet_6
+  - first:
+      213: -5543063145967184540
+    second: paper-plane-fly-sheet_7
+  - first:
+      213: -5366353396766173260
+    second: paper-plane-fly-sheet_8
+  - first:
+      213: 1940273266466892059
+    second: paper-plane-fly-sheet_9
+  - first:
+      213: -4842277136353739426
+    second: paper-plane-fly-sheet_10
+  - first:
+      213: 5291147234963031400
+    second: paper-plane-fly-sheet_11
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -40,12 +76,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 72
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -71,9 +107,309 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: paper-plane-fly-sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 193
+        width: 135
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e680596b82e86da0800000000000000
+      internalID: -5951257819174893851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paper-plane-fly-sheet_1
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 193
+        width: 135
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc0764528dfe07120800000000000000
+      internalID: 2409689512260563148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paper-plane-fly-sheet_2
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 193
+        width: 135
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b80c9ef3a60437b90800000000000000
+      internalID: -7245376550426001269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paper-plane-fly-sheet_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 130
+        width: 135
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceba1a03741814ce0800000000000000
+      internalID: -1422713864513803284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paper-plane-fly-sheet_4
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 130
+        width: 135
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0395b7a507619c9c0800000000000000
+      internalID: -3906566529957013200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paper-plane-fly-sheet_5
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 130
+        width: 135
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 475068c3934272310800000000000000
+      internalID: 1380111639059498356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paper-plane-fly-sheet_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 67
+        width: 135
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1a5199c22d964a10800000000000000
+      internalID: 1893373466092067354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paper-plane-fly-sheet_7
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 67
+        width: 135
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4651119ef651313b0800000000000000
+      internalID: -5543063145967184540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paper-plane-fly-sheet_8
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 67
+        width: 135
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b79a8e8402e685b0800000000000000
+      internalID: -5366353396766173260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paper-plane-fly-sheet_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4
+        width: 135
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1922fe714c3dea10800000000000000
+      internalID: 1940273266466892059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paper-plane-fly-sheet_10
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 4
+        width: 135
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5db3a79996ccccb0800000000000000
+      internalID: -4842277136353739426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paper-plane-fly-sheet_11
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 4
+        width: 135
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8650342606eed6940800000000000000
+      internalID: 5291147234963031400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
