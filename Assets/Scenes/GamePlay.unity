@@ -805,62 +805,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 4372558874796249669}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1877736239 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5250530009065854650, guid: 5e37aa9f98d5d4672ac01e47bc16343f,
-    type: 3}
-  m_PrefabInstance: {fileID: 5250530010645523861}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1877736241
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1877736239}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c3cb6cede36b44a0b21ab55fa6f3c8c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  jumpVel: {x: 0, y: 1750}
---- !u!70 &1877736243
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1877736239}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.12130308}
-  m_Size: {x: 1.1, y: 3.8073936}
-  m_Direction: 0
---- !u!50 &1877736245
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1877736239}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 5
 --- !u!1 &2048301897
 GameObject:
   m_ObjectHideFlags: 0
@@ -987,21 +931,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4669200092105639337, guid: 5e37aa9f98d5d4672ac01e47bc16343f,
-        type: 3}
-      propertyPath: movementVector.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4669200092105639337, guid: 5e37aa9f98d5d4672ac01e47bc16343f,
-        type: 3}
-      propertyPath: movementVector.y
-      value: 1.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5250530009065854631, guid: 5e37aa9f98d5d4672ac01e47bc16343f,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5250530009664881041, guid: 5e37aa9f98d5d4672ac01e47bc16343f,
         type: 3}
       propertyPath: m_RootOrder
@@ -1061,16 +990,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PlayerRig
-      objectReference: {fileID: 0}
-    - target: {fileID: 5250530010764325348, guid: 5e37aa9f98d5d4672ac01e47bc16343f,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5250530010764325370, guid: 5e37aa9f98d5d4672ac01e47bc16343f,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e37aa9f98d5d4672ac01e47bc16343f, type: 3}
