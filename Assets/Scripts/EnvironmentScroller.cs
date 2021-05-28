@@ -18,6 +18,14 @@ public class EnvironmentScroller : MonoBehaviour
     void Update()
     {
         transform.position = Vector2.Lerp(transform.position, endPos, Time.deltaTime * .65f);
-        //transform.position = Vector2.Lerp()
+        KillMe();
+    }
+
+    void KillMe()
+    {
+        if (transform.position.x < -15)
+        {
+            Destroy(gameObject);
+        }
     }
 }

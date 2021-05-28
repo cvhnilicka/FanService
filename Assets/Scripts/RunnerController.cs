@@ -35,6 +35,9 @@ public class RunnerController : MonoBehaviour
     public Vector2 jumpVel = new Vector2(0f, 1750f);
 
 
+    public bool btnjump;
+
+
 
 
 
@@ -50,6 +53,7 @@ public class RunnerController : MonoBehaviour
         isJumping = false;
         jumpTimer = -99f;
         startingPos = transform.localPosition;
+        btnjump = false;
     }
 
     // Update is called once per frame
@@ -89,7 +93,7 @@ public class RunnerController : MonoBehaviour
 
     void Jump()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) || btnjump)
         {
             myCollider.size = jumpColliderSize;
             myCollider.offset = jumpColliderOffset;
@@ -97,7 +101,14 @@ public class RunnerController : MonoBehaviour
             jumpTimer = jumpTime;
             myBody.AddRelativeForce(jumpVel);
             animator.SetBool("IsJumping", isJumping);
+            btnjump = false;
+
         }
+    }
+
+    public void SetBtnJump()
+    {
+        this.btnjump = true;
     }
 
     void JumpTimer()
