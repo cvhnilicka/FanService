@@ -32,7 +32,7 @@ public class RunnerController : MonoBehaviour
     private float jumpTimer;
     float movementFactor;
 
-    public Vector2 jumpVel = new Vector2(0f, 600f);
+    public Vector2 jumpVel = new Vector2(0f, 1750f);
 
 
 

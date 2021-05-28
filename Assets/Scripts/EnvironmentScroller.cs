@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class EnvironmentScroller : MonoBehaviour
 {
-    private Vector2 startPos = new Vector2(9.37f,-4.4f);
-    private Vector2 endPos = new Vector2(-18.37f, -4.4f);
+    public Vector2 startPos = new Vector2(0,0);
+    public Vector2 endPos = new Vector2(0, 0);
 
 
     // Start is called before the first frame update
@@ -17,7 +17,7 @@ public class EnvironmentScroller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = Vector2.Lerp(transform.position, endPos, Time.deltaTime * .5f);
+        transform.position = Vector2.Lerp(transform.position, endPos, Time.deltaTime * .65f);
         //transform.position = Vector2.Lerp()
     }
 }
