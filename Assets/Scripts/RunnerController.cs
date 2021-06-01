@@ -75,13 +75,6 @@ public class RunnerController : MonoBehaviour
 
             }
         }
-        else
-        {
-            // todo: dead stuff
-            
-        }
-
-
 
     }
 
@@ -145,7 +138,6 @@ public class RunnerController : MonoBehaviour
         if (jumpTimer <= 0f && isJumping)
         {
             isJumping = false;
-            //transform.localPosition = startingPos;
             animator.SetBool("IsJumping", isJumping);
             myCollider.size = regColliderSize;
             myCollider.offset = regColliderOffset;
