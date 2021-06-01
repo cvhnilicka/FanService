@@ -20,9 +20,7 @@ public class RunnerController : MonoBehaviour
 
 
 
-    private Vector3 movementVector = new Vector3(0f, 1.4f, 0);
     private Vector3 startingPos;
-    float period = 0.5f;
 
     // state
     private bool isSliding;
@@ -30,12 +28,14 @@ public class RunnerController : MonoBehaviour
 
     private float jumpTime = 0.4f;
     private float jumpTimer;
-    float movementFactor;
 
     public Vector2 jumpVel = new Vector2(0f, 1750f);
 
 
     public bool btnjump;
+    public bool btnslide;
+
+    private bool isDead;
 
 
 
@@ -54,25 +54,36 @@ public class RunnerController : MonoBehaviour
         jumpTimer = -99f;
         startingPos = transform.localPosition;
         btnjump = false;
+        btnslide = false;
+        isDead = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        Slide();
-        Jump();
-        if (isJumping)
+        if (!isDead)
         {
-            //Oscalate();
-            JumpTimer();
+            Slide();
+            Jump();
+            if (isJumping)
+            {
+                JumpTimer();
 
+            }
         }
+        else
+        {
+            // todo: dead stuff
+            
+        }
+
+
 
     }
 
     void Slide()
     {
-        if (Input.GetKey(KeyCode.LeftShift) && !isSliding)
+        if ((Input.GetKey(KeyCode.LeftShift) || btnslide) && !isSliding)
         {
             myCollider.size = slideColliderSize;
             myCollider.offset = slideColliderOffset;
@@ -89,6 +100,7 @@ public class RunnerController : MonoBehaviour
             myCollider.size = regColliderSize;
             myCollider.offset = regColliderOffset;
         }
+
     }
 
     void Jump()
@@ -110,6 +122,19 @@ public class RunnerController : MonoBehaviour
     {
         this.btnjump = true;
     }
+    public void DoneSliding()
+    {
+        this.btnslide = false;
+        isSliding = false;
+        animator.SetBool("IsSliding", isSliding);
+        myCollider.size = regColliderSize;
+        myCollider.offset = regColliderOffset;
+    }
+
+    public void SetSlideJump()
+    {
+        this.btnslide = true;
+    }
 
     void JumpTimer()
     {
@@ -128,17 +153,16 @@ public class RunnerController : MonoBehaviour
         }
     }
 
-    void Oscalate()
+
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (period <= Mathf.Epsilon) return;
-        float cycles = Time.time / period; // grows continually from 0
-        const float tau = Mathf.PI * 2;
-        float rawSinWave = Mathf.Sin(cycles * tau);
+        Debug.Log("Collision");
+        if (collision.collider.tag == "hit")
+        {
+            Debug.Log("Need to die here");
+            isDead = true;
+        }
 
-        movementFactor = rawSinWave / 2f + 0.5f;
-
-        Vector3 offset = movementVector * movementFactor;
-        transform.position = offset + startingPos;
     }
 
 

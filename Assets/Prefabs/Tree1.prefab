@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 3572977151851919775}
   - component: {fileID: 3572977151851919774}
   - component: {fileID: 3572977151851919773}
+  - component: {fileID: 266810238570251561}
   m_Layer: 0
   m_Name: Tree1
-  m_TagString: Untagged
+  m_TagString: hit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -117,3 +118,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startPos: {x: 12.35, y: -1.92}
   endPos: {x: -22.46, y: -1.92}
+--- !u!61 &266810238570251561
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3572977151851919769}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.16392279, y: 0.27224016}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.5416667, y: 5.7916665}
+    newSize: {x: 3.5416667, y: 5.7916665}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.37230778, y: 0.60477734}
+  m_EdgeRadius: 0
