@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class RunnerController : MonoBehaviour
 {
@@ -36,6 +37,9 @@ public class RunnerController : MonoBehaviour
     public bool btnslide;
 
     private bool isDead;
+
+    [SerializeField] GameOverController gameOver;
+    [SerializeField] ScoreUIController myUI;
 
 
 
@@ -105,7 +109,7 @@ public class RunnerController : MonoBehaviour
 
     void Jump()
     {
-        if (Input.GetKeyDown(KeyCode.Space) || btnjump)
+        if ((Input.GetKeyDown(KeyCode.Space) || btnjump) && myBody.IsTouchingLayers(LayerMask.GetMask("ground")))
         {
             myCollider.size = jumpColliderSize;
             myCollider.offset = jumpColliderOffset;
@@ -156,11 +160,18 @@ public class RunnerController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("Collision");
         if (collision.collider.tag == "hit")
         {
-            Debug.Log("Need to die here");
             isDead = true;
+            // todo: display the gameoverui
+            // remove the button
+            myUI.KillScoreUpdate();
+            float s = myUI.GetScore();
+            myUI.gameObject.SetActive(false);
+            gameOver.ActivateGameOver();
+            gameOver.SetFinalScore(s);
+            
+            
         }
 
     }

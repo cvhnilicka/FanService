@@ -36,6 +36,11 @@ public class ScoreUIController : MonoBehaviour
        
     }
 
+    public float GetScore()
+    {
+        return this.curScore;
+    }
+
     public void KillScoreUpdate()
     {
         keepScore = false;
